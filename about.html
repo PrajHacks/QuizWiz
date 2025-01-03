@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuizWiz - Interactive Learning Platform</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+  }
+  .header {
+    background: #565555; 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    animation: enter 1.35s ease-out forwards;
+}
+@keyframes enter {
+    0% {
+        font-size: small;
+    }
+    100% {
+        font-size: 150%;
+    }
+  }
+  .main-content {
+    padding: 20px;
+    background-color: #F5DEB3;
+  }
+  .section {
+    margin-bottom: 30px;
+  }
+  h2 {
+    color: #333;
+  }
+
+  h1 {
+    color: #ffffff;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .celebration-animation {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  /* .confetti {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #f0f;
+    animation: celebrate 2s linear infinite;
+  }
+  @keyframes celebrate {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(500px) rotate(720deg); opacity: 0; }
+  } */
+.contact{
+    background: none;
+    text-align: center;
+    /* border-end-end-radius: 10%; */
+    border-top-right-radius: 100%;
+    border-top-left-radius: 30%;
+    padding: 9%;
+    /* align-items: center; */
+    font-size: larger;
+    background-color: #565555;
+    /* min-height: 500px; */
+    width: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: change 5s ease-out infinite;
+}
+@keyframes change {
+    0% {
+    }
+    30%{
+        border-bottom-right-radius: 110%;
+        border-top-right-radius: 30%;
+        border-top-left-radius: 80%;
+        border-bottom-left-radius: 40%;
+    }
+    50% {
+    border-top-right-radius: 50%;
+    border-top-left-radius: 95%;
+    border-bottom-left-radius: 55%;
+    border-bottom-right-radius: 60%;
+}
+75% {
+    border-top-right-radius: 110%;
+    border-bottom-right-radius: 80%;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 50%;
+    }
+  }
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    border: #333 3px solid;
+}
+
+.jump{
+    animation: jumping 1s ease-out forwards infinite;
+}
+@keyframes jumping {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        /* text-align: left; */
+        transform: translateY(-30px);
+        /* transform: translateX(-30px); */
+    }
+    90% {
+        transform: translateY(-15px);
+    }
+  }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome to QuizWiz</h1>
+  <p>The ultimate platform for interactive learning</p>
+</div>
+
+<div class="main-content">
+  <div class="section" data-aos="fade-left">
+    <h2>For Teachers & Students</h2>
+    <p>A platform for all teachers and students who are interested to use any services that we provide.</p>
+</div>
+
+<div class="section" data-aos="fade-left">
+    <h2>If you don't have a Account</h2>
+    <p>Create an account to build and manage or practice on all available quizzes.</p>
+    <a href="index.php" class="cta-button">Create Account</a>
+</div>
+
+<div class="section" data-aos="fade-left">
+    <h2>Already have a Account</h2>
+    <p>Then what are you waiting for! Signup and access everything about quizzes.</p>
+    <a href="signin.php" class="cta-button">Sign Up</a>
+  </div>
+
+  <div class="section" data-aos="fade-left">
+        <center><h3>Now There is no LIMIT!!!</h3></center>
+    </div>
+
+  <div class="section" data-aos="fade-left">
+    <h2>Learning & Feedback</h2>
+    <p>After completing a quiz, students can review all questions along with the correct answers for an enhanced learning experience.</p>
+  </div>
+
+  <div class="contact" data-aos="fade-right">
+    <div class="jump">
+    <h2 style="color: rgb(230, 186, 104);">FOR ANY FURTHER QUERIES CONTACT US HERE : <br><br>11yashshinde@gmail.com<br>vedantbawkar@gmail.com<br>prajwalshevante@gmail.com<br>karthikathevar@gmail.com
+    </h2>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
